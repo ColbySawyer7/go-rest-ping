@@ -47,7 +47,7 @@ func OpenConnection() *sql.DB {
 
 func GETHandler(w http.ResponseWriter, r *http.Request) {
 	db := OpenConnection()
-	rows, err := db.Query("SELECT * FROM location")
+	rows, err := db.Query("SELECT * FROM locations")
 	if err != nil {
 		log.Fatal(err)
 	}
