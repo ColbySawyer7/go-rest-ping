@@ -96,7 +96,7 @@ func runPingTest(polling_interval int) float64 {
 func main() {
 
 	router := mux.NewRouter()
-	router.HandleFunc("/locations", GETHandler).Methods("GET")
+	router.HandleFunc("/locations/", GETHandler).Methods("GET")
 	router.HandleFunc("/locations/", POSTHandler).Methods("POST")
 
 	fmt.Println("Server at 8081")
