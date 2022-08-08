@@ -17,7 +17,7 @@ const (
 	port     = 5432
 	user     = "postgres"
 	password = "postgres"
-	dbname   = "postgres"
+	dbname   = "gorestping"
 )
 
 // location represents the logical destination of ping operation
